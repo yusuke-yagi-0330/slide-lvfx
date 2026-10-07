@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>乳がん化学療法におけるレボフロキサシンのルーチン予防制限</title>
+<style>
+    :root {
+        --primary-color: #1a2a6c;
+        --accent-color: #c00000;
+        --bg-color: #f5f6f8;
+        --slide-bg: #ffffff;
+        --text-color: #333333;
+    }
+    body {
+        font-family: Arial, "Meiryo", sans-serif; /* 英数字Arial、日本語メイリオ */
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .slide {
+        width: 960px;
+        height: 540px;
+        background-color: var(--slide-bg);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 40px 50px;
+    }
+    /* Title Slide Specifics */
+    .slide.title-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .title-text {
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+    .author-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .affiliation-text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+    /* Standard Slide Header */
+    .slide-header {
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--text-color);
+        border-left: 8px solid var(--primary-color);
+        padding-left: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+    /* Content Area */
+    .content {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .content ul {
+        padding-left: 20px;
+    }
+    .content li {
+        margin-bottom: 12px;
+        list-style-type: none;
+        position: relative;
+    }
+    .content li::before {
+        content: "■";
+        color: var(--primary-color);
+        position: absolute;
+        left: -20px;
+        font-size: 16px;
+        top: 2px;
+    }
+    .content li li::before {
+        content: "・";
+        color: var(--text-color);
+        left: -15px;
+        font-size: 18px;
+    }
+    /* Highlight */
+    .highlight {
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+    /* Tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px; /* Adjusted to fit 20 rows */
+        text-align: center;
+        margin-top: 10px;
+    }
+    th, td {
+        border-bottom: 1px solid #ccc;
+        padding: 4px 8px;
+    }
+    th {
+        border-top: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+    .text-left {
+        text-align: left;
+    }
+    /* Box */
+    .objective-box {
+        border: 2px solid var(--primary-color);
+        padding: 15px;
+        margin-top: 20px;
+        font-weight: bold;
+        background-color: #f0f4f8;
+    }
+    /* Footer Citations */
+    .citation {
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.3;
+    }
+    .slide-number {
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide title-slide">
+    <div class="title-text">
+        乳がん化学療法におけるレボフロキサシンの<br>
+        ルーチン予防制限の臨床的転帰：<br>
+        単施設後方視的コホート研究
+    </div>
+    <div class="author-text">
+        〇 中村友理 1、八木祐助 1,2*、森澤俊平 1、加藤隆大 1、常深浩平 1、<br>
+        荒川 悠 2,3、山岸由佳 2,3、増田隆明 4、浜田幸宏 1
+    </div>
+    <div class="affiliation-text">
+        1 高知大学医学部附属病院 薬剤部 2 高知大学医学部附属病院 感染管理部<br>
+        3 高知大学医学部 臨床感染症学講座 4 高知大学医学部 乳腺・腫瘍外科学講座
+    </div>
+</div>
+
+<!-- Slide 2: COI -->
+<div class="slide">
+    <div class="slide-header">利益相反の開示</div>
+    <div class="content" style="text-align: center; margin-top: 100px;">
+        筆頭発表者名： 中村 友理<br><br><br>
+        私は今回の演題に関連して、<br>
+        開示すべき利益相反はありません。
+    </div>
+</div>
+
+<!-- Slide 3: Background & Objective -->
+<div class="slide">
+    <div class="slide-header">背景と目的</div>
+    <div class="content">
+        <ul>
+            <li>発熱性好中球減少症（FN）はがん化学療法における重篤な合併症である1)。</li>
+            <li>乳がん等の固形がんでは、FNリスクに応じたG-CSFの個別化が基本であり、ルーチンの抗菌薬予防投与は推奨されていないが2,3)、当院乳腺外科ではLVFXの経口処方が多かった。</li>
+            <li>AMR対策（AWaRe分類）の観点からも、フルオロキノロン系薬の適正化が喫緊の課題となっている4)。</li>
+        </ul>
+        <div class="objective-box">
+            【本研究の目的】<br>
+            高リスク乳がん化学療法において、部門特異的なLVFXのルーチン予防制限戦略が、抗菌薬処方および臨床的転帰（FN関連入院等）に与える影響を評価する。
+        </div>
+    </div>
+    <div class="citation">
+        1) Lyman GH, et al. Cancer 2010;116:5555-63.<br>
+        2) Cullen MH, et al. J Clin Oncol 2007;25:4821-8.<br>
+        3) de Naurois J, et al. Ann Oncol 2010;21 Suppl 5:v252-6.<br>
+        4) Kusama Y, et al. Int J Infect Dis 2021;103:154-156.
+    </div>
+    <div class="slide-number">3</div>
+</div>
+
+<!-- Slide 4: Methods -->
+<div class="slide">
+    <div class="slide-header">対象と方法</div>
+    <div class="content" style="font-size: 18px;">
+        <ul>
+            <li><span style="font-weight:bold;">研究デザイン：</span> 単施設後方視的コホート研究（高知大学医学部附属病院）</li>
+            <li><span style="font-weight:bold;">対象期間：</span> 2022年4月～2026年3月
+                <ul>
+                    <li>介入前（2022.4～2024.3）：LVFXルーチン予防投与が一般的</li>
+                    <li>介入後（2024.4～2026.3）：多職種連携に基づくLVFXルーチン予防の原則制限とG-CSFの個別化</li>
+                </ul>
+            </li>
+            <li><span style="font-weight:bold;">対象患者：</span> 発症リスク&gt;20%の高リスク化学療法を開始した外来乳がん患者</li>
+            <li><span style="font-weight:bold;">評価指標：</span>
+                <ul>
+                    <li>【抗菌薬使用指標】AUD、DOT、LVFX処方患者数 （分割時系列 [ITS] 解析）</li>
+                    <li>【臨床アウトカム】FN関連予定外入院、重篤なイベント（敗血症性ショック・ICU入室・死亡）<br>
+                        （傾向スコアマッチング [PSM] および 一般化推定方程式 [GEE] による解析）</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="slide-number">4</div>
+</div>
+
+<!-- Slide 5: Univariate Analysis (All Backgrounds) -->
+<div class="slide">
+    <div class="slide-header">結果：患者背景（PSM前・単変量解析）</div>
+    <table>
+        <thead>
+            <tr>
+                <th class="text-left">変数</th>
+                <th>介入前 (n=102)</th>
+                <th>介入後 (n=56)</th>
+                <th>P値</th>
+                <th>SMD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="text-left">年齢 (years)</td><td>56.71 (12.62)</td><td>55.48 (12.48)</td><td>0.559</td><td>0.098</td></tr>
+            <tr><td class="text-left">女性 n (%)</td><td>100 (98.0)</td><td>56 (100.0)</td><td>0.756</td><td>0.200</td></tr>
+            <tr><td class="text-left">BMI (kg/m²)</td><td>23.57 (4.21)</td><td>23.46 (4.01)</td><td>0.882</td><td>0.025</td></tr>
+            <tr style="background:#fff0f0;"><td class="text-left font-weight-bold">予防的G-CSF投与 n (%)</td><td>38 (37.3)</td><td>50 (89.3)</td><td>&lt;0.001</td><td>1.282</td></tr>
+            <tr style="background:#fff0f0;"><td class="text-left">化学療法歴 n (%)</td><td>1 (1.0)</td><td>12 (21.4)</td><td>&lt;0.001</td><td>0.685</td></tr>
+            <tr><td class="text-left">糖尿病 n (%)</td><td>5 (4.9)</td><td>9 (16.1)</td><td>0.038</td><td>0.371</td></tr>
+            <tr><td class="text-left">心疾患 n (%)</td><td>3 (2.9)</td><td>2 (3.6)</td><td>1.000</td><td>0.036</td></tr>
+            <tr><td class="text-left">アルブミン (g/dL)</td><td>4.25 (0.37)</td><td>4.10 (0.30)</td><td>0.012</td><td>0.434</td></tr>
+            <tr><td class="text-left">AST (U/L)</td><td>24.48 (20.00)</td><td>21.09 (10.58)</td><td>0.240</td><td>0.212</td></tr>
+            <tr><td class="text-left">ALT (U/L)</td><td>23.58 (18.88)</td><td>21.09 (11.92)</td><td>0.373</td><td>0.158</td></tr>
+            <tr><td class="text-left">クレアチニン (mg/dL)</td><td>0.59 (0.11)</td><td>0.60 (0.12)</td><td>0.729</td><td>0.057</td></tr>
+            <tr><td class="text-left">ヘモグロビン (g/dL)</td><td>12.57 (1.57)</td><td>11.92 (1.57)</td><td>0.013</td><td>0.416</td></tr>
+            <tr><td class="text-left">血小板 (/µL)</td><td>256,284 (67,399)</td><td>299,804 (101,320)</td><td>0.002</td><td>0.506</td></tr>
+            <tr><td class="text-left">白血球 (/µL)</td><td>5,863 (2,174)</td><td>5,971 (2,426)</td><td>0.773</td><td>0.047</td></tr>
+            <tr><td class="text-left">好中球 (/µL)</td><td>3,967 (2,184)</td><td>4,024 (2,061)</td><td>0.873</td><td>0.027</td></tr>
+            <tr><td class="text-left">CRP (mg/dL)</td><td>0.20 (0.40)</td><td>0.22 (0.48)</td><td>0.773</td><td>0.047</td></tr>
+            <tr><td class="text-left">eGFR (mL/min/1.73 m²)</td><td>85.07 (18.36)</td><td>83.77 (17.24)</td><td>0.664</td><td>0.073</td></tr>
+            <tr><td class="text-left">アンスラサイクリン系レジメン n (%)</td><td>70 (68.6)</td><td>39 (69.6)</td><td>0.616</td><td>0.022</td></tr>
+            <tr><td class="text-left">HER2指向タキサン系レジメン n (%)</td><td>14 (13.7)</td><td>5 (8.9)</td><td>-</td><td>0.152</td></tr>
+            <tr><td class="text-left">その他のタキサン系レジメン n (%)</td><td>18 (17.6)</td><td>12 (21.4)</td><td>-</td><td>0.095</td></tr>
+        </tbody>
+    </table>
+    <div style="font-size:11px; margin-top:5px; text-align:right;">Mean (SD) or n (%). レジメン分布の全体P値(0.616)</div>
+    <div class="slide-number">5</div>
+</div>
+
+<!-- Slide 6: Results - ITS -->
+<div class="slide">
+    <div class="slide-header">結果：LVFX使用指標の推移（ITS解析）</div>
+    <div class="content">
+        <ul>
+            <li><span style="font-weight:bold;">処方患者数の有意な減少：</span><br>
+                自己相関および季節性を調整した分割時系列（ITS）モデルにおいて、2024年4月の介入直後に<span class="highlight">処方患者数の有意なレベル低下（-5.95; P=0.024）</span>が認められた。</li>
+            <li><span style="font-weight:bold;">AUDおよびDOTの推移：</span><br>
+                AUD（-3.92; P=0.158）およびDOT（-2.96; P=0.298）も同様に減少傾向を示した。</li>
+            <li><span style="font-weight:bold;">移行期間を考慮した感度分析：</span><br>
+                多職種間での事前の協議・通知期間（2024年2月〜3月）を除外した感度分析では、<span class="highlight">AUD、DOT、処方患者数の全指標において統計的に有意な即時減少</span>（P&lt;0.05）が確認された。</li>
+        </ul>
+    </div>
+    <div class="slide-number">6</div>
+</div>
+
+<!-- Slide 7: Results - Clinical Outcomes -->
+<div class="slide">
+    <div class="slide-header">結果：臨床的転帰（PSMおよびGEE解析）</div>
+    <div class="content">
+        <ul>
+            <li><span style="font-weight:bold;">傾向スコアマッチング（PSM）コホート</span>（36ペア）
+                <ul>
+                    <li>FN関連予定外入院：<br>
+                        介入前 <span class="highlight">8例（22.2%）</span> vs 介入後 <span class="highlight">1例（2.8%）</span><br>
+                        <span style="font-size:16px;">（Matched OR: 0.125, 95% CI: 0.003-0.932, P=0.039）</span>
+                    </li>
+                    <li>重篤なイベント（敗血症性ショック、ICU入室、死亡）： 両群ともに 0例</li>
+                </ul>
+            </li>
+            <br>
+            <li><span style="font-weight:bold;">一般化推定方程式（GEE）モデル</span>（全351レジメンイベント）
+                <ul>
+                    <li>予防的G-CSF投与、化学療法歴、レジメンを調整した感度分析においても、<span class="highlight">介入はFN関連入院リスクの有意な低下と関連</span>していた。<br>
+                    <span style="font-size:16px;">（Adjusted OR: 0.074, 95% CI: 0.009-0.628, P=0.017）</span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="slide-number">7</div>
+</div>
+
+<!-- Slide 8: Discussion -->
+<div class="slide">
+    <div class="slide-header">考察</div>
+    <div class="content">
+        <ul>
+            <li>本研究において、LVFXのルーチン予防制限とG-CSFの個別化を統合した多職種支持療法モデルにより、LVFX使用を削減しつつ、FN関連入院を有意に減少できることが示された。</li>
+            <li>ルーチンなキノロン系予防投与の削減は、耐性菌選択圧の低下だけでなく、腸内細菌叢の保護を通じた感染リスクの低減1,2)など、潜在的な恩恵をもたらす可能性がある。</li>
+            <li>PSMおよびGEEを用いた厳密な交絡調整（G-CSF使用割合の差など）を行っても結果は一貫しており、本アプローチの安全性が示唆された。</li>
+        </ul>
+    </div>
+    <div class="citation">
+        1) Cusumano G, et al. Antibiotics (Basel) 2025;14:371.<br>
+        2) Schlechte J, et al. Nat Med 2023;29:1017-1027.
+    </div>
+    <div class="slide-number">8</div>
+</div>
+
+<!-- Slide 9: Limitations -->
+<div class="slide">
+    <div class="slide-header">本研究の限界と今後の展望</div>
+    <div class="content">
+        <ul>
+            <li>単施設後方視的観察研究であり、未測定の交絡因子（全身状態、服薬アドヒアランス等の時間依存性因子）が存在する可能性がある。</li>
+            <li>イベント発生数が少ないため、PSM後コホートの効果推定値の信頼区間が広く、検出力に限界がある。</li>
+            <li>LVFX制限、G-CSF運用変更、多職種連携体制の強化が複合的に実施されたため、LVFX単独の制限による純粋な効果を切り分けることは困難である。</li>
+            <li>今後は、薬剤耐性菌の検出状況や医療経済的評価（費用対効果）を含めた、前向き多施設研究による検証が求められる。</li>
+        </ul>
+    </div>
+    <div class="slide-number">9</div>
+</div>
+
+<!-- Slide 10: Conclusion (White Background) -->
+<div class="slide">
+    <div class="slide-header">結論</div>
+    <div class="content" style="margin-top: 30px;">
+        <ul>
+            <li><span style="font-weight:bold; font-size: 22px;">高リスク乳がん化学療法において、LVFXのルーチン予防制限を主軸とした部門特異的戦略は、重篤な有害事象を増やすことなく、FN関連入院の減少と抗菌薬の適正化に寄与した。</span></li>
+            <br><br>
+            <li><span style="font-weight:bold; font-size: 22px;">抗菌薬のルーチン予防に依存せず、個別化されたG-CSF投与や多職種モニタリング等の支持療法を統合させることが、安全で質の高いがん医療の提供において重要である。</span></li>
+        </ul>
+    </div>
+    <div class="slide-number">10</div>
+</div>
+
+</body>
+</html>
